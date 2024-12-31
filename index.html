@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!-- <!DOCTYPE HTML>
 <!--
 	Aerial by HTML5 UP
 	html5up.net | @n33co
@@ -77,4 +77,155 @@
     }
 		</script>
 	</body>
+</html>
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Under Maintenance</title>
+    <style>
+        /* Resetting margin, padding, and box-sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling with full gradient background */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f2a8d5, #f2d4a8); /* Full gradient background */
+            color: #333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Container styling with a subtle gradient at the top to blend into the background */
+        .container {
+            max-width: 750px;
+            padding: 40px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 60%, rgba(255, 255, 255, 1) 100%);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%); /* Soft gradient blending */
+        }
+
+        /* Heading styling */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Builder image styling */
+        .builder-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover effect for the builder image */
+        .builder-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contact button styling */
+        .contact {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            background: #25d366; /* WhatsApp green */
+            color: white;
+            box-shadow: 0 4px 15px rgba(49, 211, 37, 0.6);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        /* WhatsApp icon styling */
+        .contact img {
+            width: 22px;
+            margin-right: 10px;
+        }
+
+        /* Hover effect for the contact button */
+        .contact:hover {
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.8);
+            transform: translateY(-5px);
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 25px;
+            font-size: 0.9rem;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .builder-image {
+                max-width: 90%;
+            }
+
+            .contact {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>I am Building Something Awesome!</h1>
+    <p>Site is currently down for maintenance. Thank you for your patience!</p>
+    <img src="https://images.fastcompany.com/image/upload/f_webp,c_fit,w_1920,q_auto/wp-cms/uploads/2017/08/p-1-clash-of-clans-builder.jpg"
+         alt="Builder at work"
+         class="builder-image">
+    <a href="https://api.whatsapp.com/send?phone=+919124123747&text=Hi Raju, When will the site be up?"
+       class="contact"
+       target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+        Contact Raju on WhatsApp
+    </a>
+    <footer>© 2024 All Rights Reserved.</footer>
+</div>
+</body>
 </html>
