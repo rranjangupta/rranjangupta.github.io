@@ -45,10 +45,36 @@
 			</div>
 		</div>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script>
 			window.onload = function() { document.body.className = ''; }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			<script>
+    // Define the correct invite code
+    const correctInviteCode = 'encrpted'; // Change this to your actual invite code
+
+    // Function to validate the invite code either from the URL or input field
+    function validateInviteCode() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const inviteCodeFromURL = urlParams.get('invite');
+        const enteredCode = document.getElementById('inviteCode').value;
+
+        if (inviteCodeFromURL === correctInviteCode || enteredCode === correctInviteCode) {
+            // Redirect to raju.html if the code is correct
+            window.location.href = 'raju.html';
+        } else {
+            // Show the popup if the code is incorrect
+            document.getElementById('popupMessage').style.display = 'block';
+        }
+    }
+
+    // Trigger validation on page load if the invite code is already in the URL
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const inviteCodeFromURL = urlParams.get('invite');
+        if (inviteCodeFromURL === correctInviteCode) {
+            window.location.href = 'raju.html';
+        }
+    }
 		</script>
 	</body>
 </html>
